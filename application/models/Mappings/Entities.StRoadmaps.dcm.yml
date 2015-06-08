@@ -1,0 +1,30 @@
+Entities\StRoadmaps:
+    type: entity
+    table: ST_ROADMAPS
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        time:
+            type: integer
+            unsigned: false
+            nullable: true
+        budget:
+            type: integer
+            unsigned: false
+            nullable: true
+    manyToOne:
+        idUser:
+            targetEntity: Entities\StUsers
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_user:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

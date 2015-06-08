@@ -1,0 +1,43 @@
+Entities\StRoadmapItems:
+    type: entity
+    table: ST_ROADMAP_ITEMS
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        startDate:
+            type: date
+            nullable: true
+            column: start_date
+        endDate:
+            type: date
+            nullable: true
+            column: end_date
+        budget:
+            type: integer
+            unsigned: false
+            nullable: true
+    manyToOne:
+        idRoadmap:
+            targetEntity: Entities\StRoadmaps
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_roadmap:
+                    referencedColumnName: id
+            orphanRemoval: false
+        countryCode:
+            targetEntity: Entities\StCountries
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                country_code:
+                    referencedColumnName: code
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

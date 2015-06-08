@@ -1,0 +1,100 @@
+Entities\StUsers:
+    type: entity
+    table: ST_USERS
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        name:
+            type: string
+            length: 64
+            fixed: false
+            nullable: true
+        middleName:
+            type: string
+            length: 64
+            fixed: false
+            nullable: true
+            column: middle_name
+        lastName:
+            type: string
+            length: 64
+            fixed: false
+            nullable: true
+            column: last_name
+        email:
+            type: string
+            length: 128
+            fixed: false
+            nullable: true
+        password:
+            type: string
+            length: 256
+            fixed: false
+            nullable: true
+        birth:
+            type: date
+            nullable: true
+        aboutMe:
+            type: text
+            nullable: true
+            column: about_me
+        regDate:
+            type: datetime
+            nullable: false
+            column: reg_date
+        description:
+            type: text
+            nullable: true
+        what:
+            type: text
+            nullable: true
+        picture:
+            type: string
+            length: 128
+            fixed: false
+            nullable: true
+        idFacebook:
+            type: string
+            length: 24
+            fixed: false
+            nullable: true
+            column: id_facebook
+        sex:
+            type: string
+            length: 1
+            fixed: true
+            nullable: true
+        confToken:
+            type: string
+            length: 256
+            fixed: false
+            nullable: true
+            column: conf_token
+        skills:
+            type: text
+            nullable: true
+    manyToOne:
+        countryCode:
+            targetEntity: Entities\StCountries
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                country_code:
+                    referencedColumnName: code
+            orphanRemoval: false
+        locale:
+            targetEntity: Entities\StLocales
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                locale:
+                    referencedColumnName: locale
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

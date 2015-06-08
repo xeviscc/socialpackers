@@ -1,0 +1,18 @@
+Entities\StPrivacyLevel:
+    type: entity
+    table: ST_PRIVACY_LEVEL
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        privacyLevel:
+            type: string
+            length: 10
+            fixed: false
+            nullable: false
+            column: privacy_level
+    lifecycleCallbacks: {  }

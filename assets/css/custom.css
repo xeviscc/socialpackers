@@ -1,0 +1,500 @@
+/**
+ * All your custom CSS should go into this file
+ */
+html {
+
+  height: 100% !important;
+}
+
+body {
+  /*padding-top: 80px;*/
+  /*background-color: #C5D7ED;*/
+  /*padding-bottom: 100px;*/
+  margin-top:60px;
+}
+
+.land_body{
+  margin-top:0;
+}
+
+@media (max-width: 979px) {
+  .navbar-fixed-top.navbar-absolute {
+      position: absolute;
+      margin: 0;
+  }   /*
+  body {
+    padding-top: 80px;
+    padding-bottom: 0px;
+  } */
+}
+
+/*.central{
+background-color: white;
+border-radius: 20px;
+box-shadow: 5px 5px 5px 5px #888888;
+} */
+.navbar-inverse {
+  opacity:0.8;
+}
+.item_proj {
+  width: 26%;
+  margin: 10px;
+  float: left;
+}
+/*.land_body {*/
+.land_image_1 {
+  /*ONLY LANDING*/
+  position: relative;
+  background-image: url(/assets/img/landing/lan1.jpg);
+  background-repeat: no-repeat;
+  background-position:right top;
+  background-attachment:fixed;
+  background-size: 100%;
+  
+  
+  -moz-box-shadow: inset 0px 0px 30px #000;
+  -webkit-box-shadow: inset 0px 0px 30px #000;
+  box-shadow: inset 0px 0px 30px #000;
+  
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 800px;
+  height:100%;
+  width:100%;
+  
+
+  /*END ONLY LANDING*/
+}
+.land_image_2{
+  /*ONLY LANDING*/
+  position: relative;
+  background-image: url(/assets/img/landing/lan2.jpg);
+  background-repeat: no-repeat;
+  background-position:right top;
+  background-attachment:fixed;
+  background-size: 100%;
+  
+  
+  -moz-box-shadow: inset 0px 0px 30px #000;
+  -webkit-box-shadow: inset 0px 0px 30px #000;
+  box-shadow: inset 0px 0px 30px #000;
+  
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 800px;
+  height:100%;
+  width:100%;
+  
+
+  /*END ONLY LANDING*/
+}
+.land_image_3{
+  /*ONLY LANDING*/
+  position: relative;
+  background-image: url(/assets/img/landing/lan3.jpg);
+  background-repeat: no-repeat;
+  background-position:right top;
+  background-attachment:fixed;
+  background-size: 100%;
+  
+  
+  -moz-box-shadow: inset 0px 0px 30px #000;
+  -webkit-box-shadow: inset 0px 0px 30px #000;
+  box-shadow: inset 0px 0px 30px #000;
+  
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 800px;
+  height:100%;
+  width:100%;
+  
+
+  /*END ONLY LANDING*/
+}
+.land_image_4{
+  /*ONLY LANDING*/
+  position: relative;
+  background-image: url(/assets/img/landing/lan4.jpg);
+  background-repeat: no-repeat;
+  background-position:right top;
+  background-attachment:fixed;
+  background-size: 100%;
+  
+  
+  -moz-box-shadow: inset 0px 0px 30px #000;
+  -webkit-box-shadow: inset 0px 0px 30px #000;
+  box-shadow: inset 0px 0px 30px #000;
+  
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 800px;
+  height:100%;
+  width:100%;
+  
+
+  /*END ONLY LANDING*/
+}
+/*
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+} */
+
+/*Footer*/
+footer {
+  border-top-style:solid;
+  border-top-color:rgba(0,0,0,0.5);
+  padding-top:2px;
+  font-size: 12px;
+  /*border-top: 1px dotted #BDBDBD;*/
+  background-color: rgb(213,207,200);
+  margin-top:50px;             
+}
+.footer{
+  margin-top:0;  
+}
+.header {}
+.footer li{
+  padding: 5px;
+}
+.li_first{
+  padding: 7px 0px 7px 0px;
+}
+
+/**
+ * TASKS
+ */ 
+.task {
+  background-color: rgba(121, 130, 238, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 5px;
+}
+.taskHidden {
+  display: none;
+}
+.taskMinimized {
+  background-color: rgba(121, 130, 238, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 5px;
+}
+
+/**
+ * TASKS
+ */ 
+.country {
+  background-color: rgba(121, 130, 238, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 5px;
+}
+.country li.span3 {
+  margin-left: 0;
+  line-height: 20px;
+}
+
+/*Bootstrap extension for button*/
+.btn-3xlarge{
+  font-size: 50px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 20px;
+  margin: 5px;
+  height: 200px;
+  width: 400px;
+}
+/*Bootstrap extension for progress*/
+.progress-large{
+  height: 30px;
+}
+/*Layout for login*/
+.header-login{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.body-login{
+  padding-top: 20px;
+}
+.body-login-pair{
+
+}
+.body-login-forgot{
+  font-size: 10px;
+  padding-left: 140px;  
+}
+.button-login{
+  padding-top: 20px;
+  padding-left: 90px;
+}
+.button-login-fb{
+  padding-top: 20px;
+  text-align: center;
+}
+/*Adjusting donate button*/
+.form-donate{
+  padding-left: 30px;
+}
+
+
+.bar-success:hover{
+  background-color: #5eb95e;
+  background-image: -moz-linear-gradient(top,#000000,#57a957);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#000000),to(#57a957));
+  background-image: -webkit-linear-gradient(top,#000000,#57a957);
+  background-image: -o-linear-gradient(top,#000000,#57a957);
+  background-image: linear-gradient(to bottom,#000000,#57a957);
+  cursor:pointer;
+}
+.bar-warning:hover {
+  background-color: #faa732;
+  background-image: -moz-linear-gradient(top,#000000,#f89406);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#000000),to(#f89406));
+  background-image: -webkit-linear-gradient(top,#000000,#f89406);
+  background-image: -o-linear-gradient(top,#000000,#f89406);
+  background-image: linear-gradient(to bottom,#000000,#f89406);
+  cursor:pointer;
+}
+.bar-danger:hover {
+  background-color: #dd514c;
+  background-image: -moz-linear-gradient(top,#000000,#c43c35);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#000000),to(#c43c35));
+  background-image: -webkit-linear-gradient(top,#000000,#c43c35);
+  background-image: -o-linear-gradient(top,#000000,#c43c35);
+  background-image: linear-gradient(to bottom,#000000,#c43c35);
+  cursor:pointer;
+}
+
+.pull-thirty{
+  margin-left:40px;
+}
+.btn-status{
+  margin-bottom:10px;
+}
+.text-clarify{
+  font-size: 75%;
+  padding-left: 35px;
+}
+
+
+/*Style for login and contact*/
+.landing_button
+{
+  margin-bottom: 10px;
+}
+/*
+[class^="lang-"],
+[class*=" lang-"] {
+  width: 14px;
+  background-image: url("../img/flags_preview_large.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+
+.lang-en{
+  background-position: -24px 0;
+}
+.lang-sp{
+  background-position: -24px 0;
+}
+.lang-fr{
+  background-position: -24px 0;
+}  */
+#myLogin{
+  width: auto;
+  /*left: 60%;*/
+  max-width: 300px;
+}
+#myRegister{
+  width: auto;
+  /*left: 60%;*/
+  max-width: 300px;
+}
+
+
+.odd {
+background-image: linear-gradient(bottom, rgb(255,255,255) 0%, rgb(235,235,235) 100%);
+background-image: -o-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(235,235,235) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(235,235,235) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(235,235,235) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(235,235,235) 100%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(255,255,255)),
+	color-stop(1, rgb(235,235,235))
+);
+}
+.even {
+background-image: linear-gradient(bottom, rgb(245,245,245) 0%, rgb(235,235,235) 100%);
+background-image: -o-linear-gradient(bottom, rgb(245,245,245) 0%, rgb(235,235,235) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(245,245,245) 0%, rgb(235,235,235) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(245,245,245) 0%, rgb(235,235,235) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(245,245,245) 0%, rgb(235,235,235) 100%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(245,245,245)),
+	color-stop(1, rgb(235,235,235))
+);
+}
+
+.box-tip-header{
+  
+  background-color: rgb(228,228,228);
+}
+.box-tip-header > span {
+  display: inline-block;
+}
+.box-tip-header .date {
+  margin-left: 50%;
+}
+.box-tip-header .country_name {
+  margin-left: 5%;
+}
+.box-tip-footer{
+  
+}
+.box-tip-footer .category {
+  /*border: 1px solid rgba(66, 165, 243, 0.22);*/
+  border-radius: 5px;
+  background-color: rgba(66, 165, 243, 0.22);
+  padding: 2px;
+  margin: 1px;
+}
+.item_tip{
+  border: solid 1px;
+  border-color: rgb(200,200,200);
+}
+
+.newsletter{
+  position: absolute;
+  bottom: 15%;
+}
+
+/* WAYPOINT*/
+.mapholder{
+  background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmw18E7gVHXZCgtEFEr1VCquxzYaxViBxvA_fJ92unvIRc8PvWcQ);
+  position:absolute;
+  bottom: 80px;
+  right: 80px;
+  border: 2px;
+  border-radius: 20px;
+}
+.mapholder img:hover{
+  opacity: 0.2;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+
+.countries{
+   display: inline-block;   
+}
+.picroadmap{
+  border-radius: 20px; 
+  height:60px; 
+  width:60px;
+}
+.picroadmap_rl{
+  border-radius: 5px; 
+  height:30px; 
+  width:30px;
+}
+.nameroadmap{
+  font-size:200%;
+}
+
+.rounded-style{
+  border-radius: 20px;
+  padding-top: 20px; 
+  padding-bottom: 20px;
+  margin-top: 5px; 
+  background-image: linear-gradient(to bottom,#fff,#f2f2f2); 
+  box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+}
+/*Style for login and contact*/
+.rounded-box
+{
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 5px;
+  background-image: linear-gradient(to bottom,#fff,#f2f2f2); 
+  box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+}
+
+.bd {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 64em;
+  height: 36em;
+  margin-left: -32em;
+  margin-top: -18em;
+  text-align: center;
+    color:black;
+}
+.bd h1 {
+font-size: 6em;
+font-weight: bold;
+}
+.bd h2.sub-header {
+font-size: 4em;
+}
+.bd a.neon-cta {
+display: inline-block;
+padding: 0px 2em 5px 2em;
+font-size: 2em;
+line-height: 1.75em;
+font-weight: 400;
+text-decoration: none;
+background: #ff0084;
+color: #fff;
+box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
+border-radius: 5px;
+background-image: linear-gradient(bottom, rgb(85,170,85) 35%, rgb(85,170,85) 84%);
+background-image: -o-linear-gradient(bottom, rgb(85,170,85) 35%, rgb(85,170,85) 84%);
+background-image: -moz-linear-gradient(bottom, rgb(85,170,85) 35%, rgb(85,170,85) 84%);
+background-image: -webkit-linear-gradient(bottom, rgb(85,170,85) 35%, rgb(85,170,85) 84%);
+background-image: -ms-linear-gradient(bottom, rgb(85,170,85) 35%, rgb(85,170,85) 84%);
+background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.35, rgb(85,170,85)), color-stop(0.84, rgb(85,170,85)) );
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+}
+.bd .subtext {
+font-size: 1.5em;
+line-height: 1.4em;
+font-weight: 200;
+}
+h1, h2, h3 {
+/*font-size: 5em;*/
+line-height: 1em;
+}
+a.brand {
+  font-family: Love Ya Like A Sister;
+}
+.social_logo{
+  color:rgb(0,150,250);
+}
+.brand:hover .social_logo{
+  color:rgb(0, 100, 250);
+}
+.packers_logo{
+  color:rgb(154,186,126);
+}
+.brand:hover .packers_logo{
+  color:green;
+}
+.subtext a {
+  color:rgb(144,0,0);
+  font-weight:bold;
+}
+.subtext a[href="#myRegister"] {
+  font-size:1.5em;
+}

@@ -1,0 +1,47 @@
+Entities\StProjects:
+    type: entity
+    table: ST_PROJECTS
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        name:
+            type: string
+            length: 100
+            fixed: false
+            nullable: true
+        countryCode:
+            type: string
+            length: 2
+            fixed: true
+            nullable: true
+            column: country_code
+        picture:
+            type: string
+            length: 128
+            fixed: false
+            nullable: true
+        description:
+            type: text
+            nullable: true
+        published:
+            type: boolean
+            nullable: true
+        validated:
+            type: boolean
+            nullable: true
+    manyToOne:
+        organizer:
+            targetEntity: Entities\StUsers
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                organizer:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

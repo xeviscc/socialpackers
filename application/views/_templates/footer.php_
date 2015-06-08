@@ -1,0 +1,22 @@
+</div>
+
+</div>
+
+<div id="footer">
+<footer class="footer">
+  <div class="row-fluid">
+    <div class="span6 offset3">	
+        <ul class="">
+          <li><a href="./blog">Blog</a></li>
+          <li>|</li>
+	  <li><a href="./about">About</a></li>
+          <li>|</li>
+          <li><a href="./contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="span3">
+	<p>(c) Copyright 2013</p>
+    </div>
+</div>
+</footer>
+</div>

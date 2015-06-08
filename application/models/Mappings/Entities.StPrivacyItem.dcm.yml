@@ -1,0 +1,31 @@
+Entities\StPrivacyItem:
+    type: entity
+    table: ST_PRIVACY_ITEM
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+    manyToOne:
+        item:
+            targetEntity: Entities\StItems
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                item:
+                    referencedColumnName: id
+            orphanRemoval: false
+        privacyLevel:
+            targetEntity: Entities\StPrivacyLevel
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                privacy_level:
+                    referencedColumnName: privacy_level
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

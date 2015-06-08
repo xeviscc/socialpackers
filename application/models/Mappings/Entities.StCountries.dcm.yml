@@ -1,0 +1,13 @@
+Entities\StCountries:
+    type: entity
+    table: ST_COUNTRIES
+    fields:
+        code:
+            id: true
+            type: string
+            length: 2
+            fixed: true
+            nullable: false
+            generator:
+                strategy: IDENTITY
+    lifecycleCallbacks: {  }

@@ -1,0 +1,38 @@
+Entities\StFriends:
+    type: entity
+    table: ST_FRIENDS
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        reqDate:
+            type: datetime
+            nullable: false
+            column: req_date
+        accepted:
+            type: boolean
+            nullable: true
+    manyToOne:
+        toUser:
+            targetEntity: Entities\StUsers
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                to_user:
+                    referencedColumnName: id
+            orphanRemoval: false
+        fromUser:
+            targetEntity: Entities\StUsers
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                from_user:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

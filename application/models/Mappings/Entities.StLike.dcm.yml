@@ -1,0 +1,31 @@
+Entities\StLike:
+    type: entity
+    table: ST_LIKE
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+    manyToOne:
+        idTip:
+            targetEntity: Entities\StTips
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_tip:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idUser:
+            targetEntity: Entities\StUsers
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_user:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

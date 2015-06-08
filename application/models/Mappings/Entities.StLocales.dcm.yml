@@ -1,0 +1,18 @@
+Entities\StLocales:
+    type: entity
+    table: ST_LOCALES
+    fields:
+        locale:
+            id: true
+            type: string
+            length: 11
+            fixed: true
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        name:
+            type: string
+            length: 50
+            fixed: false
+            nullable: false
+    lifecycleCallbacks: {  }

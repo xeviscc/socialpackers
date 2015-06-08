@@ -1,0 +1,43 @@
+Entities\StUserProject:
+    type: entity
+    table: ST_USER_PROJECT
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        approved:
+            type: boolean
+            nullable: true
+    manyToOne:
+        idUser:
+            targetEntity: Entities\StUsers
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_user:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idProject:
+            targetEntity: Entities\StProjects
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_project:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idTask:
+            targetEntity: Entities\StTasks
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_task:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

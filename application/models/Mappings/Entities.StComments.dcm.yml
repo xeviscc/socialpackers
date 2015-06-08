@@ -1,0 +1,45 @@
+Entities\StComments:
+    type: entity
+    table: ST_COMMENTS
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        idItem:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_item
+        comment:
+            type: text
+            nullable: false
+        date:
+            type: datetime
+            nullable: false
+        approved:
+            type: boolean
+            nullable: true
+    manyToOne:
+        idUser:
+            targetEntity: Entities\StUsers
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_user:
+                    referencedColumnName: id
+            orphanRemoval: false
+        type:
+            targetEntity: Entities\StItemTypes
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                type:
+                    referencedColumnName: type
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

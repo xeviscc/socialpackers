@@ -1,0 +1,32 @@
+Entities\StWaypoints:
+    type: entity
+    table: ST_WAYPOINTS
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        latitude:
+            type: float
+            nullable: true
+        longitude:
+            type: float
+            nullable: true
+        checkinDate:
+            type: datetime
+            nullable: false
+            column: checkin_date
+    manyToOne:
+        idUser:
+            targetEntity: Entities\StUsers
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_user:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

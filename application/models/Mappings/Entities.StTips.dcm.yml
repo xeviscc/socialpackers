@@ -1,0 +1,41 @@
+Entities\StTips:
+    type: entity
+    table: ST_TIPS
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        tip:
+            type: text
+            nullable: true
+        publicationDate:
+            type: datetime
+            nullable: false
+            column: publication_date
+        categories:
+            type: text
+            nullable: true
+    manyToOne:
+        countryCode:
+            targetEntity: Entities\StCountries
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                country_code:
+                    referencedColumnName: code
+            orphanRemoval: false
+        idUser:
+            targetEntity: Entities\StUsers
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_user:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

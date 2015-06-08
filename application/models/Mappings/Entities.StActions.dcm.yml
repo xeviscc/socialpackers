@@ -1,0 +1,13 @@
+Entities\StActions:
+    type: entity
+    table: ST_ACTIONS
+    fields:
+        action:
+            id: true
+            type: string
+            length: 10
+            fixed: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+    lifecycleCallbacks: {  }

@@ -1,0 +1,44 @@
+Entities\StItems:
+    type: entity
+    table: ST_ITEMS
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        idobject:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: idObject
+        date:
+            type: date
+            nullable: false
+        action:
+            type: string
+            length: 20
+            fixed: false
+            nullable: true
+    manyToOne:
+        iduser:
+            targetEntity: Entities\StUsers
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                idUser:
+                    referencedColumnName: id
+            orphanRemoval: false
+        type:
+            targetEntity: Entities\StItemTypes
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                type:
+                    referencedColumnName: type
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

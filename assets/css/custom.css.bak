@@ -1,0 +1,70 @@
+/**
+ * All your custom CSS should go into this file
+ */
+
+/*body {
+   padding-top: 15px;
+}*/
+
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -86px; /* the bottom margin is the negative value of the footer's height */
+}                                                                                           
+
+/*Footer*/
+.footer {
+  height: 78px; /* .footer must be the same height as .wrapper margin */
+  padding-top:7px;
+  border-top: 1px dotted #BDBDBD;
+  background-color: #F5F5F5;           
+}
+.footer li{
+  display: inline;
+  padding: 5px;
+}
+
+.task {
+  border: 1px solid rgba(121, 130, 238, 0.65);
+  border-radius: 10;
+  padding: 20px;
+  margin-top: 5px;
+}
+.taskHidden {
+  display: none;
+}
+.taskMinimized {
+  border: 1px solid rgba(121, 130, 238, 0.65);
+  border-radius: 10;
+  padding: 10px;
+  margin-top: 5px;
+}
+.andor{
+  font-size: 95%;
+}
+
+/*Bootstrap extension for button*/
+.btn-3xlarge{
+  /*padding: 50px 50px;*/
+  font-size: 50px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 20px;
+  margin: 5px;
+  height: 200px;
+  width: 400px;
+}
+/*Bootstrap extension for progress*/
+.progress-large{
+  height: 40px;
+}
+
+
